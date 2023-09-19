@@ -1,0 +1,590 @@
+
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  
+  /* Style the hamburger menu */
+  
+  /* Add a grey background color on mouse-over */
+
+::-webkit-scrollbar { width: 0 !important }
+
+.right {
+    margin: 12px 40px;
+}
+
+.bottom-border {
+    border-bottom: 1px solid white !important;
+    border-radius: 2px;
+}
+
+
+.content {
+    /* border: 2px solid black; */
+    align-items: center;
+    display: flex;
+}
+
+.writting {
+    /* border: 2px solid black; */
+    width: 800px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.headings h2 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin: 15px;
+}
+
+.headings h4 {
+    color: #555A60;
+    margin: 15px;
+}
+
+.l {
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.content-search {
+    width: 640px;
+    text-align: center;
+    padding: 12px 12px;
+    margin: 20px 0px;
+}
+
+.filters {
+    width: 800px;
+    margin: 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.filters h2,
+.filter-btn {
+    font-size: 1.3rem;
+    color: #555A60;
+    margin: 15px;
+}
+
+.filter-btn {
+
+    font-size: 1rem;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #555A60;
+    padding: 5px;
+}
+
+.filter-btn i {
+    margin: 3px;
+}
+
+.content-search input {
+    width: 100%;
+    border: none;
+    background: #eee;
+    border-radius: 15px;
+    height: 45px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+
+
+.dropbtn {
+    background-color: #f7f6f4;
+    color: #555a60;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #555a60;
+    height: 49px;
+}
+
+.dropbtn i {
+    margin: 12px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    left: 35px;
+    top: 4px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content ul li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #f7f6f4;
+    color: #555a60;
+}
+
+
+
+
+
+
+.btn {
+    cursor: pointer;
+}
+
+.submit-button {
+    font-size: 1rem;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #555A60;
+    padding: 5px
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 14px;
+}
+
+.container.filter-container.active,
+.container.pricing-container.active {
+    display: flex !important;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.card {
+
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    background: white;
+    /* background: linear-gradient(to right, #FFFFFF, #ECE9E6); */
+    width: 270px;
+    cursor: pointer;
+}
+
+label {
+    cursor: pointer;
+    margin-left: 6px;
+}
+
+.filter-card,
+.pricing-card {
+    width: calc(100%/4);
+    ;
+    align-items: center;
+    background: white;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    width: 100%;
+}
+
+.card ul {
+    margin: 8px;
+}
+
+.card ul li {
+    list-style: none;
+    margin: 4px;
+}
+
+.card__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+
+.tag {
+    align-self: flex-start;
+    padding: .25em .75em;
+    border-radius: 1em;
+    font-size: .75rem;
+}
+
+.tag+.tag {
+    margin-left: .5em;
+}
+
+.tag-blue {
+    background: #29A8D0;
+    color: #fafafa;
+}
+
+.tag-grey {
+    border: 1.5px solid #403f48;
+    color: #403f48;
+
+}
+
+.tag-brown {
+    background: #8246DB;
+    /* background: linear-gradient(to bottom, #FFD194, #322411); */
+    color: #fafafa;
+}
+
+.tag-red {
+    background: #cb2d3e;
+    background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+    color: #fafafa;
+}
+
+.card__body h4 {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 14px 0px;
+}
+
+.card__footer {
+    display: flex;
+    padding: 1rem;
+    margin-top: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.card__footer::-webkit-scrollbar { width: 0 !important }
+
+.user {
+    display: flex;
+    gap: .5rem;
+}
+
+.user__image {
+    border-radius: 50%;
+}
+
+.user__info>small {
+    color: #666;
+}
+
+#close {
+    cursor: pointer;
+}
+
+.cut {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin-top: 0;
+    margin-right: 26px;
+}
+
+.cut i {
+    position: fixed;
+}
+
+
+.pricing-card ul {
+    margin: 8px;
+    width: 50%;
+    max-height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 0;
+}
+
+.pricing-cut {
+    width: 90%;
+}
+
+.pricing-container {
+    width: 50% !important;
+
+}
+
+.pricing-card ul li {
+    list-style: none;
+    margin: 4px;
+    width: 44%;
+}
+
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+a,
+a.active,
+a.visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+.display-card {
+    position: relative;
+    transition: 2s all ease-in-out;
+}
+
+
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    background: white !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.info-head {
+    display: flex;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0 49px;
+    gap: 15px;
+}
+
+.tags {
+    display: flex;
+}
+
+.prd-img {
+    display: flex;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    margin: 25px 11px;
+}
+.prd-img::-webkit-scrollbar { width: 0 !important }
+    margin: 25px 11px;
+
+.prd-img img {
+    height: 260px;
+    margin: 4px;
+    border-radius: 5px;
+
+}
+
+.discription {
+    margin: 8px 0px;
+}
+
+.cardlogo {
+    flex: 0 0 auto;
+    margin-left: 15px;
+}
+
+.cardlogo img {
+    border-radius: 5px;
+}
+
+.try_btn {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 1;
+    padding: 8px 18px;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    width: 200px;
+}
+
+.try_btn:hover {
+    background: white;
+    color: #5E5DF0;
+    transition: all .5s ease-in-out;
+}
+
+
+
+
+
+
+@media screen and (min-width:950px) and (max-width:1180px) {
+    .pricing-card ul {
+
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .info-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cardlogo {
+        width: 40%;
+    }
+
+    .about-info {
+        margin: 0px 16px;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    .card {
+        width: 230px;
+    }
+
+    .container.filter-container,
+    .container.pricing-container {
+        width: 90%;
+    }
+
+    .pricing-card ul {
+        width: 100%;
+    }
+
+    .pricing-card ul li {
+        width: 43%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .writting {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .filters {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .filter-btn {
+        width: 80%;
+        height: 45px;
+    }
+
+    .content {
+        height: 70vh;
+    }
+
+    .container {
+        padding: 30px 0px;
+    }
+
+    .card {
+        width: 260px;
+    }
+
+    .pricing-container {
+        width: 70% !important;
+    }
+
+    .pricing-card ul li {
+        width: 100%;
+    }
+
+    .pricing-card ul {
+        gap: 8px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:640px) {
+    .content-search {
+        width: 100%;
+        height: 60px;
+    }
+
+    .container.pricing-container {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .headings h2 {
+        font-size: 2rem;
+        margin: 7px;
+    }
+
+    .l {
+        font-size: .9rem;
+    }
+
+    .headings h4 {
+        margin: 6px;
+    }
+
+    .container {
+        padding: 30px 18px;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+}
