@@ -1,0 +1,85 @@
+{{>headers}}
+<style>
+    .wrapper{
+        height: fit-content;
+padding: 15px;
+    }
+    </style>
+<body>
+    
+ 
+    <!-- nav bar -->
+    {{>welcomeNav}}
+    
+
+    <!-- header section -->
+    <header>
+        <div class="container header-section flex">
+            <div class="header-left">
+                <h1>TECH PHANTOMS</h1>
+                <p>TECH PHANTOM is a one stop solution for all your inner creativity and designing.
+                    this is a site where you can browse between diffrent colleges and find something you can worth your time.</p>
+                    <br>
+                    <br>
+                    
+                   <p> In this site you can find various projects of diffrent colleges and find the creativity of their students
+                    and can upgrade your skill set by doing interactive and amazing projects. 
+                    
+                </p>
+                <a href="/TechPhantoms/college/registration" class="primary-button get-started-btn">COLLEGE</a>
+                <a href="/TechPhantoms/student/registration" class="primary-button get-started-btn">STUDENT</a>
+            </div>
+            <div class="header-right">
+              <div class="wrapper active-popup">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Registration For College</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="person-sharp"></ion-icon>
+                    </span>
+                    <input type="text" required="">
+                    <label>First name </label>
+                </div>
+                <div class="input-box">
+                    <input type="text" required="">
+                    <label>Last name </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail"></ion-icon>
+                    </span>
+                    <input type="email" required="">
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required="">
+                    <label>Password</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </span>
+                    <input type="password" required="">
+                    <label>Confirm Password</label>
+                </div>
+
+
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Are u a student? <a href="/TechPhantoms/student/login" class="register-link">Register here</a></p>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+            </div>
+        </div>
+    </header>
+    </body>

@@ -1,0 +1,147 @@
+
+{{>headers}}
+{{>sidenav}}
+<body>
+    <nav>
+        <div class="logo-name">
+            <!-- <div class="logo-image">
+               <img src="IMAGE2.JPEG.png" alt="">
+            </div> -->
+
+            <span class="logo_name">TechPhantom</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/TechPhantoms/college">
+                    
+                    <span class="link-name">Home</span>
+                </a></li>
+                <li><a href="#">
+                    
+                    <span class="link-name">Ranking</span>
+                </a></li>
+                <li><a href="#">
+                   
+                    <span class="link-name">Projects Uploaded</span>
+                </a></li>
+                <li><a href="#">
+                  
+                    <span class="link-name">Competitions Posed</span>
+                </a></li>
+                 
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+
+        <div class="top" style="">
+            <div class="container info-container">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        <div>
+            <div class="info-head">
+                <div class="cardlogo">
+                    <img src={{{maineImage}}} style="width: 400;height: 400;" alt="card__image" class="card__image"
+                        width="600">
+                </div>
+                <div class="about-info">
+                    <div>
+                        <h2 class="item-name" >{{{title}}}</h2>
+                    </div>
+                    <div class="tags">
+                        <span class="tag tag-grey">#Code</span>
+                        <span class="tag tag-grey">#CodeAssistant</span>
+                        <span class="tag feature tag-grey">#API</span>
+                    </div>
+                    <div class="discription">
+                        <h2>Discription</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti neque possimus nemo, quo, non
+                            facere atque fuga, et pariatur sapiente velit doloribus! Dolorem laborum rerum nostrum deserunt
+                            soluta nesciunt quia illo similique facere pariatur, voluptatibus ipsam laboriosam in voluptatem
+                            maiores, labore suscipit, eum nam eligendi ipsum. Repellat culpa cupiditate ratione!</p>
+                    </div>
+                    <div class="btn" style="background: inherit;">
+                        <button class="try_btn">Try It....</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-main">
+                <div class="prd-img">
+                    <img src={{{image1}}} alt="card__image" class="card__image"
+                        width="600">
+                        <img src={{{image2}}} alt="card__image"
+                        class="card__image" width="600">
+                        <img src={{{image3}}}
+                        alt="card__image" class="card__image" width="600">
+                        <img src={{{image4}}} alt="card__image" class="card__image"
+                        width="600">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    </header>
+        </div>
+    </section>
+    <script>
+
+        </script>
+    <script>
+        const body = document.querySelector("body"),
+      modeToggle = body.querySelector(".mode-toggle");
+      sidebar = body.querySelector("nav");
+      sidebarToggle = body.querySelector(".sidebar-toggle");
+
+let getMode = localStorage.getItem("mode");
+if(getMode && getMode ==="dark"){
+    body.classList.toggle("dark");
+}
+
+let getStatus = localStorage.getItem("status");
+if(getStatus && getStatus ==="close"){
+    sidebar.classList.toggle("close");
+}
+
+modeToggle.addEventListener("click", () =>{
+    body.classList.toggle("dark");
+    if(body.classList.contains("dark")){
+        localStorage.setItem("mode", "dark");
+    }else{
+        localStorage.setItem("mode", "light");
+    }
+});
+
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")){
+        localStorage.setItem("status", "close");
+    }else{
+        localStorage.setItem("status", "open");
+    }
+})
+    </script>
+
+    <script src="exploreFunc.js">
+    </script>
+</body>

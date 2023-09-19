@@ -1,0 +1,233 @@
+{{>headers}}
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+/* resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 33px;
+font-family: 'Lobster', cursive;
+position: relative;
+    top: -88px
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+input{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+    height: 66px;
+    width: 499px;
+    top: -58px;
+    position: relative;
+    border: 2px black solid;
+    border-radius: 7px;
+
+}
+
+
+
+
+
+ul {
+    list-style: none;
+}
+
+/* utility classes */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--accent-color);
+}
+
+
+button{
+    height: 44px;
+    width: 101px;
+    font-size: 19px;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: rgb(0, 145, 255);
+    color: white;
+    position: relative;
+    top: -2px;
+    left: 25px;
+}
+ 
+  
+ 
+ button:focus{
+   color:#000000;
+   background-color: #1d69a3;
+   border: 2px solid #000000;
+   
+ 
+ }
+ button:hover,button.active{
+   background: #1d69a3;;
+   
+ }
+
+
+/* nav bar */
+
+.main-nav {
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 90px;
+}
+
+.nav-links {
+    flex-basis: 730px;
+    font-weight: 900;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* header section */
+
+header {
+    padding: 50px var(--padding-inline-section) 0;
+}
+
+.header-section {
+    justify-content: center;
+    gap: 5px;
+    box-shadow: 0 0 8px;
+    position: relative;
+    top: -10px;
+}
+
+.header-left {
+    max-width: 40vw;
+}
+
+.header-left h1 {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.get-started-btn {
+    margin: 17px 25px ;
+    gap: 10px;
+}
+
+.header-right img {
+    width: 100%;
+    margin: 35px 35px;
+}
+
+</style>
+    <!-- nav bar -->
+    <nav>
+        <div class="container main-nav flex">
+            <a href="#" class="company-logo">
+                <img src="/images/IMAGE2.JPEG.png" alt="company logo">
+            </a>
+            <div class="nav-links" id="nav-links">
+                <ul class="flex">
+                    <li><a href="/TechPhantoms/college" class="hover-link">Home</a></li>
+                    <li><a href="#" class="hover-link">About Us</a></li>
+                    <li><a href="#" class="hover-link">Contact</a></li>
+                    <li><a href="/TechPhantoms/college/profile" class="hover-link">Profile</a></li>
+                    <!-- <li><a href="LP.HTML" class="hover-link secondary-button">Sign UP</a></li> -->
+                    <!-- <li><a href="#" class="hover-link primary-button">Log in</a></li> -->
+                </ul>
+            </div>
+            <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- header section -->
+    <header>
+        <div class="container header-section flex">
+            <div class="header-left">
+                <h1>Post stimulating challenges to inspire creativity and problem-solving skills among students!</h1>
+                <input type="text" placeholder="Ask Your Question">
+            <a href="admin login form/college.html.html"><button>Post</button></a> 
+            </div>
+            <div class="header-right">
+                <img src="/images/student3.jpg" alt="studying photo">
+            </div>
+        </div>
+    </header>

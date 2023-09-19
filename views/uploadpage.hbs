@@ -1,0 +1,343 @@
+
+
+
+{{>headers}}
+{{>sidenav}}
+
+</style>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <!-- <div class="logo-image">
+               <img src="IMAGE2.JPEG.png" alt="">
+            </div> -->
+
+            <span class="logo_name">TechPhantom</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/TechPhantoms/college">
+                    
+                    <span class="link-name">Home</span>
+                </a></li>
+                <li><a href="#">
+                    
+                    <span class="link-name">Ranking</span>
+                </a></li>
+                <li><a href="#">
+                   
+                    <span class="link-name">Projects Uploaded</span>
+                </a></li>
+                <li><a href="#">
+                  
+                    <span class="link-name">Competitions Posed</span>
+                </a></li>
+                 
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+            </div>
+    <div class="dash-content" style="padding-top: 50px;">
+            <div class="overview">
+                <h2>User Input with Multiple Images</h2>
+        <form action="/check" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="title">
+            </div>
+            <!-- dropdown -->
+            <div class="madarchod">
+
+                <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+                <div class="containerss">
+                    <button class="upload-btn" id="drp-dwn1" onclick=tog(id)>
+                        Dropdown
+                        <i class="bx bx-chevron-down" id="arrow"></i>
+                    </button>
+
+                    <div class="dropdown" id="list1">
+                        <a href="#create">
+                            <i class="bx bx-plus-circle"></i>
+                            Create New
+                        </a>
+                        <a href="#draft">
+                            <i class="bx bx-book"></i>
+                            All Drafts
+                        </a>
+                        <a href="#move">
+                            <i class="bx bx-folder"></i>
+                            Move To
+                        </a>
+                        <a href="#profile">
+                            <i class="bx bx-user"></i>
+                            Profile Settings
+                        </a>
+                        <a href="#notification">
+                            <i class="bx bx-bell"></i>
+                            Notification
+                        </a>
+                        <a href="#settings">
+                            <i class="bx bx-cog"></i>
+                            Settings
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- 2nd dropdown  -->
+                <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+                <div class="containerss">
+                    <button class="upload-btn" id="drp-dwn2" onclick=tog(id)>
+                        Dropdown
+                        <i class="bx bx-chevron-down" id="arrow"></i>
+                    </button>
+
+                    <div class="dropdown" id="list2">
+                        <a href="#create">
+                            <i class="bx bx-plus-circle"></i>
+                            Create New
+                        </a>
+                        <a href="#draft">
+                            <i class="bx bx-book"></i>
+                            All Drafts
+                        </a>
+                        <a href="#move">
+                            <i class="bx bx-folder"></i>
+                            Move To
+                        </a>
+                        <a href="#profile">
+                            <i class="bx bx-user"></i>
+                            Profile Settings
+                        </a>
+                        <a href="#notification">
+                            <i class="bx bx-bell"></i>
+                            Notification
+                        </a>
+                        <a href="#settings">
+                            <i class="bx bx-cog"></i>
+                            Settings
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- 3rd dropdown  sparsh -->
+                <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+                <div class="containerss">
+                    <button class="upload-btn" id="drp-dwn3" onclick=tog(id)>
+                        Dropdown
+                        <i class="bx bx-chevron-down" id="arrow"></i>
+                    </button>
+
+                    <div class="dropdown" id="list3">
+                        <a href="#create">
+                            <i class="bx bx-plus-circle"></i>
+                            Create New
+                        </a>
+                        <a href="#draft">
+                            <i class="bx bx-book"></i>
+                            All Drafts
+                        </a>
+                        <a href="#move">
+                            <i class="bx bx-folder"></i>
+                            Move To
+                        </a>
+                        <a href="#profle">
+                            <i class="bx bx-user"></i>
+                            Profile Settings
+                        </a>
+                        <a href="#notfication">
+                            <i class="bx bx-bell"></i>
+                            Notification
+                        </a>
+                        <a href="#setings">
+                            <i class="bx bx-cog"></i>
+                            Settings
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- 4th dropdown  -->
+                <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+                <div class="containerss">
+                    <button class="upload-btn" id="drp-dwn4" onclick=tog(id)>
+                        Dropdown
+                        <i class="bx bx-chevron-down" id="arrow"></i>
+                    </button>
+
+                    <div class="dropdown" id="list4">
+                        <a href="#create">
+                            <i class="bx bx-plus-circle"></i>
+                            Create New
+                        </a>
+                        <a href="#draft">
+                            <i class="bx bx-book"></i>
+                            All Drafts
+                        </a>
+                        <a href="#move">
+                            <i class="bx bx-folder"></i>
+                            Move To
+                        </a>
+                        <a href="#proile">
+                            <i class="bx bx-user"></i>
+                            Profile Settings
+                        </a>
+                        <a href="#notifcation">
+                            <i class="bx bx-bell"></i>
+                            Notification
+                        </a>
+                        <a href="#setting">
+                            <i class="bx bx-cog"></i>
+                            Settings
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- file ended -->
+            <div class="form-group">
+
+                <div class=" chutiya">
+                    <label for="images">Upload Images:</label>
+                    <div id="image-inputs">
+                        <input type="file" name="image" accept="image/*" required>
+                    </div>
+
+
+                    <!-- images -->
+
+                    <label for="images">Upload Images:</label>
+                    <div id="image-inputs">
+                        <input type="file" name="image" accept="image/*" required>
+                    </div>
+
+
+                    <label for="images">Upload Images:</label>
+                    <div id="image-inputs">
+                        <input type="file" name="image" accept="image/*" required>
+                    </div>
+
+                    <label for="images">Upload Images:</label>
+                    <div id="image-inputs">
+                        <input type="file" name="image" accept="image/*" required>
+                    </div>
+                </div>
+
+
+                <div class="bsdk2">
+                    <button type="button" class="add-image-button" onclick="addImageInput()">Add Image</button>
+
+                    <button type="button" class="add-image-button" onclick="addImageInput()">remove image</button>
+                </div>
+        </form>
+        <div class="description">
+            <textarea name="" id="" cols="30" rows="10" placeholder="">description</textarea>
+                <input type="submit" value="Submit">
+        </div>
+            </div>
+        </div>
+
+  <script>
+    
+var num = 0;
+function addImageInput() {
+
+    const imageInputs = document.getElementById("image-inputs");
+    const newInput = document.createElement("input");
+    newInput.type = "file";
+    newInput.name = `image`;
+    newInput.accept = "image/*";
+    newInput.required = true;
+    imageInputs.appendChild(newInput);
+}
+
+const dropdownMenu = document.getElementById("dropdown");
+const toggleArrow = document.getElementById("arrow");
+
+// Toggle dropdown function
+const toggleDropdown = function () {
+  dropdownMenu.classList.toggle("show");
+  toggleArrow.classList.toggle("arrow");
+};
+
+// Toggle dropdown open/close when dropdown button is clicked
+function tog(id){
+    const btn = document.getElementById(id).nextElementSibling
+    const list = document.getElementById(btn.id)
+    list.classList.toggle("show")
+}
+
+// Close dropdown when dom element is clicked
+document.documentElement.addEventListener("click", function () {
+  if (dropdownMenu.classList.contains("show")) {
+    toggleDropdown();
+  }
+});
+
+</script>
+    <script>
+        const body = document.querySelector("body"),
+      modeToggle = body.querySelector(".mode-toggle");
+      sidebar = body.querySelector("nav");
+      sidebarToggle = body.querySelector(".sidebar-toggle");
+
+let getMode = localStorage.getItem("mode");
+if(getMode && getMode ==="dark"){
+    body.classList.toggle("dark");
+}
+
+let getStatus = localStorage.getItem("status");
+if(getStatus && getStatus ==="close"){
+    sidebar.classList.toggle("close");
+}
+
+modeToggle.addEventListener("click", () =>{
+    body.classList.toggle("dark");
+    if(body.classList.contains("dark")){
+        localStorage.setItem("mode", "dark");
+    }else{
+        localStorage.setItem("mode", "light");
+    }
+});
+
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")){
+        localStorage.setItem("status", "close");
+    }else{
+        localStorage.setItem("status", "open");
+    }
+})
+    </script>
+</body>

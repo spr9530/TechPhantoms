@@ -1,0 +1,361 @@
+
+{{>headers}}
+{{>sidenav}}
+
+<style>
+    a:hover {
+    font-size: 1.1rem;
+    background: transparent;
+}
+    .container.filter-container,
+.container.pricing-container {
+    display: none;
+    position: fixed;
+    width: 70%;
+    z-index: 3;
+    border: 2px solid gray;
+    background: white;
+    gap: 2rem;
+    height: 80vh;
+    overflow: scroll !important ;
+    scrollbar-width: none;
+    top: 43px;
+}
+</style>
+
+<body>
+    <nav>
+        <div class="logo-name">
+            <!-- <div class="logo-image">
+               <img src="IMAGE2.JPEG.png" alt="">
+            </div> -->
+
+            <span class="logo_name">TechPhantom</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="/TechPhantoms/college">
+                    
+                    <span class="link-name">Home</span>
+                </a></li>
+                <li><a href="#">
+                    
+                    <span class="link-name">Ranking</span>
+                </a></li>
+                <li><a href="#">
+                   
+                    <span class="link-name">Projects Uploaded</span>
+                </a></li>
+                <li><a href="#">
+                  
+                    <span class="link-name">Competitions Posed</span>
+                </a></li>
+                 
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top" style="position: static;">
+            <header class="flex-column " style="width: 100%;">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        <div class="content flex-column">
+            <div class="writting ">
+                <div class="headings">
+                    <h4>Total:X available</h4>
+                    <h2>AI Tool Details</h2>
+                    <h4 class="l">Showcase a directory of various AI artificial intelligence tools related to AI,
+                        OpenAI, ChatGPT, GPT-3, and GPT-4. </h4>
+                </div>
+            </div>
+            <div class="content-search">
+                <input type="search" id="search" placeholder="Search Product...." onkeyup="searchitem()">
+            </div>
+            <div class="filters">
+                <h2>Filters:</h2>
+                <button class="btn filter-btn" id="category-btn" onclick="openit('filter-container')"><i
+                        class="fa-solid fa-bars-staggered"></i>Product Category</button>
+                <button class="btn filter-btn" id="pricing-btn" onclick="openit('pricing-container')" ><i class="fa-solid fa-filter"></i>Princing ans Features</button>
+                <button class="btn filter-btn"><i class="fa-solid fa-floppy-disk"></i>Product Category</button>
+            </div>
+        </div>
+        <div class="container filter-container" id="filter-container">
+            <div class="cut">
+                <i class="fa-solid fa-x" id="close" onclick="closeit()"></i>
+            </div>
+            <div class="card filter-card" id="AI_Name">
+                <h4 id="name audio" class="n" onclick="Filter_display('audio')"><i class="fa-solid fa-headphones"></i><a href="#">Audio</a></h4>
+                <ul>
+                    <a href="#"><li onclick="Filter_display1('AudioEditing')">Audio editing</li></a>
+                    <a href="#"><li onclick="Filter_display1('musicgeneration')">Music generation</li></a>
+                    <a href="#"><li onclick="Filter_display1('TextToSpeech')">text-to-speech</li></a>
+                </ul>
+            </div>
+            <div class="card filter-card" id="AI_Name">
+                <a href="#"><h4 id="name" class="n" onclick="Filter_display('text')"><i class="fa-solid fa-text-size"></i>Text</h4></a>
+                <ul>
+                    <a href="#"><li onclick="Filter_display1('EmailAssistant')">Email Assistant</li></a>
+                    <a href="#"><li onclick="Filter_display1('GeneralWritting')">General Writting</li></a>
+                    <a href="#"><li onclick="Filter_display1('Summerisation')">Summerisation</li></a>
+                    <a href="#"><li onclick="Filter_display1('Prompts')">Prompts</li></a>
+                </ul>
+            </div>
+            <div class="card filter-card" id="AI_Name">
+                <a href="#"><h4 id="name" class="n" onclick="Filter_display('image')"><i class="fa-solid fa-image"></i>Image</h4></a>
+                <ul>
+                    <a href="#"><li onclick="Filter_display1('avatars')">Avatars</li></a>
+                    <a href="#"><li onclick="Filter_display1('art')">Art</li></a>
+                    <a href="#"><li onclick="Filter_display1('ImageEditing')">Image Editing</li></a>
+                    <a href="#"><li onclick="Filter_display1('Logogeneration')">Logo generation</li></a>
+                </ul>
+            </div>
+            <div class="card filter-card" id="AI_Name">
+                <a href="#"><h4 id="name" class="n" onclick="Filter_display('code')"><i class="fa-solid fa-code"></i>Code</h4></a>
+                <ul>
+                    <a href="#"><li onclick="Filter_display1('codeassistant')">Code assistant</li></a>
+                    <a href="#"><li onclick="Filter_display1('developertool')">Developers Tool</li></a>
+                    <a href="#"><li onclick="Filter_display1('SQL')">SQL</li></a>
+                    <a href="#"><li onclick="Filter_display1('Spreadsheets')">Spreadsheets</li></a>
+                </ul>
+            </div>
+            <div class="card filter-card" id="AI_Name">
+                <h4 id="name" class="n"><i class="fa-solid fa-image"></i>Image</h4>
+                <!-- <ul>
+                    <a href="#"><li onclick="Filter_display1('avatars')">Avatars</li></a>
+                    <a href="#"><li onclick="Filter_display1('art')">Art</li></a>
+                    <a href="#"><li onclick="Filter_display1('ImageEditing')">Image Editing</li></a>
+                    <a href="#"><li onclick="Filter_display1('Logogeneration')">Logo generation</li></a>
+                </ul> -->
+            </div>
+            <div class="card filter-card" id="AI_Name" >
+                <h4 id="name" class="n"><i class="fa-solid fa-code"></i>Code</h4>
+                <!-- <ul>
+                    <a href="#"><li onclick="Filter_display1('codeassistant')">Code assistant</li></a>
+                    <a href="#"><li onclick="Filter_display1('developerstool')">Developers Tool</li></a>
+                    <a href="#"><li onclick="Filter_display1('sql')">SQL</li></a>
+                    <a href="#"><li onclick="Filter_display1('spreadsheets')">Spreadsheets</li></a>
+                </ul> -->
+            </div>
+        </div>
+        <div class="container pricing-container" id="pricing-container">
+            <div class="cut pricing-cut">
+                <i class="fa-solid fa-x" id="close" onclick="closeit()"></i>
+            </div>
+            <div class="card pricing-card" name= id="AI_Name">
+                <h4 id="name1" class="n"><i class="fa-solid fa-headphones"></i>Pricings</h4>
+                <ul id = "checkboxes">
+                    <li ><input type="checkbox" value="free" class="pricing-checkbox" id="free" checked=""><label for="free">free</label></li>
+                    <li>Free Trial</li>
+                    <li><input type="checkbox" value="fremium" class="pricing-checkbox" id="fremium" checked=""><label for="fremium">freemium</label></li>
+                    <li><input type="checkbox" value="premium" class="pricing-checkbox" id="premium" checked=""><label for="premium">paid</label></li>
+                </ul>
+            </div>
+            <div class="card pricing-card" id="AI_Name">
+                <h4 id="name" class="n"><i class="fa-solid fa-text-size"></i>Features</h4>
+                <ul>
+
+                    <li><input type="checkbox" value="api" class="feature-checkbox" id="api" checked=""><label for="api">API</label></li>
+                    <li><input type="checkbox" value="BrowserExtensions" class="feature-checkbox" id="BrowserExtensions" checked=""><label for="api">API</label></li>
+                    <li><input type="checkbox" value="DesktopApp" class="feature-checkbox" id="DesktopApp" checked=""><label for="DesktopApp">Desktop App</label></li>
+                    <li><input type="checkbox" value="DiscordCommunity" class="feature-checkbox" id="DiscordCommunity" checked=""><label for="DiscordCommunity">Discord Community</label></li>
+                    <li><input type="checkbox" value="MobileDeviceApp" class="feature-checkbox" id="MobileDeviceApp" checked=""><label for="MobileDeviceApp">Mobile Device App</label></li>
+                    <li><input type="checkbox" value="NoSignupRequired" class="feature-checkbox" id="NoSignupRequired" checked=""><label for="NoSignupRequired">No Signup Required</label></li>
+                </ul>
+            </div>
+            <div class="submit">
+                <button class="submit-button btn" id="submit">Submit</button>
+            </div>
+        </div>
+    </header>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <section class="main">
+        <div class="results">
+            <div class="dropdown">
+                <button class="dropbtn">Sort By<i class="fa-solid fa-angle-down"></i></button>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="index.html">Sort By Latest</a></li>
+                        <li id="sortlist"><a href="#">Sort By A To Z</a></li>
+                        <li id="revsort"><a href="#">Sort By Z To A</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="card-container">
+            <div class="card active display-card price-added" name="Random"  id="AI_Name">
+                <div class="card__header">
+                    <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image"
+                        width="600">
+                </div>
+                <div class="card__body">
+                    <span class="tag price tag-blue">Free</span>
+                    <h4 id="name" class="n">Random</h4>
+                    <p>lLorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla doloremque ipsum, deleniti
+                        odio sequi.</p>
+                </div>
+                <div class="card__footer">
+                    <div class="user">
+                        <span class="tag tag-grey">#Audio</span>
+                        <span class="tag tag-grey">#MusicGeneration</span>
+                        <span class="tag feature tag-grey">#API</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card active display-card price-added" name="sample1" id="Sample1" onclick=refer(id)>
+                <div class="card__header">
+                    <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image"
+                        width="600">
+                </div>
+                <div class="card__body">
+                    <span class="tag price tag-red">Premium</span>
+                    <h4>sample 1</h4>
+                    <p>lLorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla doloremque ipsum, deleniti
+                        odio sequi.</p>
+                </div>
+                <div class="card__footer">
+                    <div class="user">
+                        <span class="tag tag-grey">#Code</span>
+                        <span class="tag tag-grey">#CodeAssistant</span>
+                        <span class="tag feature tag-grey">#API</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card active display-card price-added" name="sample2" id="Hoal_hii">
+                <div class="card__header">
+                    <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" class="card__image"
+                        width="600">
+                </div>
+                <div class="card__body">
+                    <span class="tag price tag-brown">Fremium</span>
+                    <h4>Sample 2</h4>
+                    <p>lLorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla doloremque ipsum, deleniti
+                        odio sequi.</p>
+                </div>
+                <div class="card__footer">
+                    <div class="user">
+                        <span class="tag tag-grey">#Text</span>
+                        <span class="tag tag-grey">#EmailAssistant</span>
+                        <span class="tag tag-grey">#DesktopApp</span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <button class="chatbot-toggler">
+      <span class="material-symbols-rounded"><i class="fa-solid fa-message"></i></span>
+      <span class="material-symbols-outlined"><i class="fa-solid fa-circle-xmark"></i></span>
+    </button>
+    <div class="chatbot">
+      <header>
+        <h2>Phantom Bot</h2>
+        <span class="close-btn material-symbols-outlined"><i class="fa-solid fa-circle-xmark"></i></span>
+      </header>
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          <p>Hi there <br>How can I help you today?</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+
+    <script src="/chatBot.js">
+    </script>
+  <script>
+
+    const container = document.getElementById('card-container');
+    fetch('/TechPhantoms/student/backend')
+    .then(response => response.json())
+    .then(data=>{
+        data.forEach(item=>{
+            container.innerHTML += `
+            <div class="card active display-card price-added" name="${item.title}" id="${item.id}" onclick=refer(id)>
+                <div class="card__header">
+                    <img src=${item.mainImage}>
+                </div>
+                <div class="card__body">
+                    <span class="tag price tag-brown">Fremium</span>
+                    <h4>${item.title}</h4>
+                    <p>lLorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nulla doloremque ipsum, deleniti
+                        odio sequi.</p>
+                </div>
+                <div class="card__footer">
+                    <div class="user">
+                        <span class="tag tag-grey">#Text</span>
+                        <span class="tag tag-grey">#EmailAssistant</span>
+                        <span class="tag tag-grey">#DesktopApp</span>
+                    </div>
+                </div>
+            </div>`
+        })
+    })
+
+    function refer(id){
+    location.href = `/TechPhantoms/student/project/${id}`
+    }
+
+
+</script>
+    <script>
+        const body = document.querySelector("body"),
+      modeToggle = body.querySelector(".mode-toggle");
+      sidebar = body.querySelector("nav");
+      sidebarToggle = body.querySelector(".sidebar-toggle");
+
+let getMode = localStorage.getItem("mode");
+if(getMode && getMode ==="dark"){
+    body.classList.toggle("dark");
+}
+
+let getStatus = localStorage.getItem("status");
+if(getStatus && getStatus ==="close"){
+    sidebar.classList.toggle("close");
+}
+
+modeToggle.addEventListener("click", () =>{
+    body.classList.toggle("dark");
+    if(body.classList.contains("dark")){
+        localStorage.setItem("mode", "dark");
+    }else{
+        localStorage.setItem("mode", "light");
+    }
+});
+
+sidebarToggle.addEventListener("click", () => {
+    sidebar.classList.toggle("close");
+    if(sidebar.classList.contains("close")){
+        localStorage.setItem("status", "close");
+    }else{
+        localStorage.setItem("status", "open");
+    }
+})
+    </script>
+
+    <script src="/exploreFunc.js">
+        console.loc('here its is')
+    </script>
+</body>
